@@ -1,16 +1,22 @@
-# Description
+## Description
 
 EEDI2 resizes an image by 2x in the vertical direction by copying the existing image to 2\*y(n) and interpolating the missing field. It is intended for edge-directed interpolation for deinterlacing (i.e. not really made for resizing a normal image, but can do that as well).
 
 This is [a port of the VapourSynth plugin EEDI2](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-EEDI2).
 
-# Usage
+### Requirements:
+
+- AviSynth 2.60 / AviSynth+ 3.4 or later
+
+- Microsoft VisualC++ Redistributable Package 2022 (can be downloaded from [here](https://github.com/abbodi1406/vcredist/releases))
+
+### Usage:
 
 ```
 EEDI2 (clip, int "mthresh", int "lthresh", int "vthresh", int "estr", int "dstr", int "maxd", int "field", int "map", int "nt", int "pp")
 ```
 
-## Parameters:
+### Parameters:
 
 - clip\
     A clip to process. It must be in 8..16-bit planar format with/without alpha.
